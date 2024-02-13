@@ -20,9 +20,9 @@
         <button class="btn bg-[#1090D8] text-white mr-6 px-8 ">Blog</button>
     </header>
     <main class="my-16">
-        <div class="container mx-12 grid grid-cols-3">
+        <div class="container mx-12 grid grid-cols-3 gap-y-10">
             <!-- triangle card -->
-            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <div class="card card-compact w-96 bg-base-100 shadow-xl ">
                 <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title mx-auto">Area = <span id="result-triangle"> 0.5 x base x height</span></h2>
@@ -59,6 +59,85 @@
             
           </div>
     </div>
+        <!-- parallelogram card -->
+        <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title mx-auto">Area = <span id="result-parallelogram">base x height</span></h2>
+              <div class="grid grid-cols-2 gap-4 w-full ">
+                <div class="flex gap-1 items-center" >
+                    <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="parallelogram-base" placeholder="base"><span class="text-xl">cm</span>
+                </div>
+                <div class="flex gap-1 items-center" >
+                    <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="parallelogram-height" placeholder="height"><span class="text-xl">cm</span>
+                </div>
+            </div>
+              <div class="card-actions ">
+                <button onclick="parallelogramCalc()" class="btn bg-[#1090D8] text-white w-full hover:bg-white hover:text-[#1090D8] border-0">Calculate</button>
+              </div>
+            
+          </div>
+    </div>
+
+    <!-- rhombus card -->
+    <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="./images/rhombus.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title mx-auto">Area = <span id="result-rhombus">0.5 x d<sub>1</sub> x d<sub>2</sub></span></h2>
+          <div class="grid grid-cols-2 gap-4 w-full ">
+            <div class="flex gap-1 items-center" >
+                <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="rhombus-d1" placeholder="diameter1"><span class="text-xl">cm</span>
+            </div>
+            <div class="flex gap-1 items-center" >
+                <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="rhombus-d2" placeholder="diameter2"><span class="text-xl">cm</span>
+            </div>
+        </div>
+          <div class="card-actions ">
+            <button onclick="rhombusCalc()" class="btn bg-[#1090D8] text-white w-full hover:bg-white hover:text-[#1090D8] border-0">Calculate</button>
+          </div>
+        
+      </div>
+</div>
+
+<!-- pentagon card -->
+<div class="card card-compact w-96 bg-base-100 shadow-xl">
+    <figure><img src="./images/pentagon.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title mx-auto">Area = <span id="result-pentagon"> 0.5 x perimeter x apothem</span></h2>
+      <div class="grid grid-cols-2 gap-4 w-full ">
+        <div class="flex gap-1 items-center" >
+            <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="pentagon-perimeter" placeholder="perimeter"><span class="text-xl">cm</span>
+        </div>
+        <div class="flex gap-1 items-center" >
+            <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="pentagon-apothem" placeholder="apothem"><span class="text-xl">cm</span>
+        </div>
+    </div>
+      <div class="card-actions ">
+        <button onclick="pentagonCalc()" class="btn bg-[#1090D8] text-white w-full hover:bg-white hover:text-[#1090D8] border-0">Calculate</button>
+      </div>
+    
+  </div>
+</div>
+
+<!-- ellipse card -->
+<div class="card card-compact w-96 bg-base-100 shadow-xl">
+    <figure><img src="./images/pentagon.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title mx-auto">Area = <span id="result-ellipse"> π x a x b</span></h2>
+      <div class="grid grid-cols-2 gap-4 w-full ">
+        <div class="flex gap-1 items-center" >
+            <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="a" placeholder="a"><span class="text-xl">cm</span>
+        </div>
+        <div class="flex gap-1 items-center" >
+            <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="b" placeholder="b"><span class="text-xl">cm</span>
+        </div>
+    </div>
+      <div class="card-actions ">
+        <button onclick="ellipseCalc()" class="btn bg-[#1090D8] text-white w-full hover:bg-white hover:text-[#1090D8] border-0">Calculate</button>
+      </div>
+    
+  </div>
+</div>
         <div class="container">
 
         </div>
