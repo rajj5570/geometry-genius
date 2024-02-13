@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <!-- tailwind css+ daisyUI -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+
+    <header class="mx-12 bg-[#1090D81A] h-28 mt-12 flex justify-between items-center">
+        <div class="pl-6">
+            <h3 class="font-extrabold text-2xl">Interactive</h3>
+            <h6 class="text-xl">Geometry Genius</h6>
+        </div>
+        <button class="btn bg-[#1090D8] text-white mr-6 px-8 ">Blog</button>
+    </header>
+    <main class="my-16">
+        <div class="container mx-12">
+            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                <!-- triangle card -->
+                <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title mx-auto">Area = <span id="result"> 0.5 x base x height</span></h2>
+                  <div class="grid grid-cols-2 gap-4 w-full ">
+                    <div class="flex gap-1 items-center" >
+                        <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="triangle-base" placeholder="base"><span class="text-xl">cm</span>
+                    </div>
+                    <div class="flex gap-1 items-center" >
+                        <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="triangle-height" placeholder="height"><span class="text-xl">cm</span>
+                    </div>
+                </div>
+                  <div class="card-actions ">
+                    <button onclick="triangleAreaCalc()" class="btn bg-[#1090D8] text-white w-full">Calculate</button>
+                  </div>
+                
+              </div>
+        </div>
+        <div class="container">
+
+        </div>
+    </main>
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
