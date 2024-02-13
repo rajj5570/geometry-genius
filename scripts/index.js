@@ -1,14 +1,20 @@
+
+
 function triangleCalc(){
     const base = getValueById('triangle-base');
     const height = getValueById('triangle-height');
-    const area = base * height;
-    showResult('result',area);
+    const area = (base * height)/2;
+    showResult('result-triangle',area);
     return area;
 
 }
-function showResult(element,area){
-    const result = document.getElementById(element);
-    result.innerHTML = area+' cm<sup>2</sup>';
+
+function rectangleCalc(){
+    const width = getValueById('rectangle-width');
+    const height = getValueById('rectangle-height');
+    const area = height * width;
+    showResult('result-rectangle', area);
+    return area;
 }
 
 function getValueById(elementID){
@@ -17,6 +23,14 @@ function getValueById(elementID){
     const value = parseFloat(inputValue);
     return value;
 }
+
+function showResult(element,area){
+    const result = document.getElementById(element);
+    result.innerHTML = area+' cm<sup>2</sup>';
+}
+
+
+
 
 
 

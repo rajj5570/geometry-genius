@@ -20,12 +20,12 @@
         <button class="btn bg-[#1090D8] text-white mr-6 px-8 ">Blog</button>
     </header>
     <main class="my-16">
-        <div class="container mx-12">
+        <div class="container mx-12 grid grid-cols-3">
+            <!-- triangle card -->
             <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <!-- triangle card -->
                 <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title mx-auto">Area = <span id="result"> 0.5 x base x height</span></h2>
+                  <h2 class="card-title mx-auto">Area = <span id="result-triangle"> 0.5 x base x height</span></h2>
                   <div class="grid grid-cols-2 gap-4 w-full ">
                     <div class="flex gap-1 items-center" >
                         <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="triangle-base" placeholder="base"><span class="text-xl">cm</span>
@@ -35,11 +35,30 @@
                     </div>
                 </div>
                   <div class="card-actions ">
-                    <button onclick="triangleCalc()" class="btn bg-[#1090D8] text-white w-full">Calculate</button>
+                    <button onclick="triangleCalc()" class="btn bg-[#1090D8] text-white w-full hover:bg-white hover:text-[#1090D8] border-0">Calculate</button>
                   </div>
                 
               </div>
         </div>
+        <!-- rectangle card -->
+        <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title mx-auto">Area = <span id="result-rectangle">width x height</span></h2>
+              <div class="grid grid-cols-2 gap-4 w-full ">
+                <div class="flex gap-1 items-center" >
+                    <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="rectangle-width" placeholder="width"><span class="text-xl">cm</span>
+                </div>
+                <div class="flex gap-1 items-center" >
+                    <input class="h-12 pl-2 w-28 bg-[#F1F1F1]" type="text" name="" id="rectangle-height" placeholder="height"><span class="text-xl">cm</span>
+                </div>
+            </div>
+              <div class="card-actions ">
+                <button onclick="rectangleCalc()" class="btn bg-[#1090D8] text-white w-full hover:bg-white hover:text-[#1090D8] border-0">Calculate</button>
+              </div>
+            
+          </div>
+    </div>
         <div class="container">
 
         </div>
